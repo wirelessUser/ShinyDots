@@ -1,0 +1,111 @@
+
+alpenhd.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+assets/blik
+  rotate: false
+  xy: 454, 137
+  size: 23, 23
+  orig: 23, 23
+  offset: 0, 0
+  index: -1
+assets/body
+  rotate: false
+  xy: 2, 53
+  size: 202, 201
+  orig: 202, 201
+  offset: 0, 0
+  index: -1
+assets/full_snow
+  rotate: false
+  xy: 410, 162
+  size: 151, 92
+  orig: 151, 92
+  offset: 0, 0
+  index: -1
+assets/hous
+  rotate: true
+  xy: 206, 2
+  size: 76, 103
+  orig: 76, 103
+  offset: 0, 0
+  index: -1
+assets/shadow
+  rotate: false
+  xy: 206, 80
+  size: 202, 174
+  orig: 202, 174
+  offset: 0, 0
+  index: -1
+assets/snow
+  rotate: false
+  xy: 563, 184
+  size: 153, 70
+  orig: 153, 70
+  offset: 0, 0
+  index: -1
+assets/snowcap_big
+  rotate: false
+  xy: 718, 214
+  size: 34, 40
+  orig: 34, 40
+  offset: 0, 0
+  index: -1
+assets/snowcap_mid
+  rotate: false
+  xy: 369, 64
+  size: 20, 14
+  orig: 20, 14
+  offset: 0, 0
+  index: -1
+assets/snowcap_small
+  rotate: false
+  xy: 54, 42
+  size: 10, 9
+  orig: 10, 9
+  offset: 0, 0
+  index: -1
+assets/snowcap_wery_big
+  rotate: false
+  xy: 311, 25
+  size: 56, 53
+  orig: 56, 53
+  offset: 0, 0
+  index: -1
+assets/snowe_flake
+  rotate: true
+  xy: 410, 80
+  size: 10, 11
+  orig: 10, 11
+  offset: 0, 0
+  index: -1
+assets/tree_L
+  rotate: false
+  xy: 410, 92
+  size: 42, 68
+  orig: 42, 68
+  offset: 0, 0
+  index: -1
+assets/tree_R
+  rotate: true
+  xy: 2, 11
+  size: 40, 50
+  orig: 40, 50
+  offset: 0, 0
+  index: -1
+assets/window
+  rotate: false
+  xy: 563, 162
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+assets/window_off
+  rotate: false
+  xy: 311, 3
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: -1

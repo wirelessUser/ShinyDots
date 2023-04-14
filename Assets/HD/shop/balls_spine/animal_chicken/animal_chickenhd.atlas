@@ -1,0 +1,27 @@
+
+animal_chickenhd.png
+size: 508,206
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+assets/blick
+  rotate: true
+  xy: 369, 39
+  size: 165, 137
+  orig: 165, 137
+  offset: 0, 0
+  index: -1
+assets/body
+  rotate: false
+  xy: 2, 2
+  size: 202, 202
+  orig: 202, 202
+  offset: 0, 0
+  index: -1
+assets/inside
+  rotate: false
+  xy: 206, 28
+  size: 161, 176
+  orig: 161, 176
+  offset: 0, 0
+  index: -1

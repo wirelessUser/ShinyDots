@@ -1,0 +1,55 @@
+
+red_smilehd.png
+size: 410,209
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+assets/images/blick
+  rotate: false
+  xy: 310, 11
+  size: 24, 23
+  orig: 24, 23
+  offset: 0, 0
+  index: -1
+assets/images/blink_eye
+  rotate: false
+  xy: 344, 36
+  size: 31, 17
+  orig: 31, 17
+  offset: 0, 0
+  index: -1
+assets/images/body
+  rotate: false
+  xy: 2, 5
+  size: 201, 202
+  orig: 201, 202
+  offset: 0, 0
+  index: -1
+assets/images/eye
+  rotate: true
+  xy: 274, 9
+  size: 25, 34
+  orig: 25, 34
+  offset: 0, 0
+  index: -1
+assets/images/mouth
+  rotate: false
+  xy: 205, 2
+  size: 67, 51
+  orig: 67, 51
+  offset: 0, 0
+  index: -1
+assets/images/shadow
+  rotate: false
+  xy: 205, 55
+  size: 203, 152
+  orig: 203, 152
+  offset: 0, 0
+  index: -1
+assets/images/teath
+  rotate: false
+  xy: 274, 36
+  size: 68, 17
+  orig: 68, 17
+  offset: 0, 0
+  index: -1

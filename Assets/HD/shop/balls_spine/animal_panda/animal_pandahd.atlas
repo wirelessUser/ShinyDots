@@ -1,0 +1,27 @@
+
+animal_pandahd.png
+size: 529,206
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+assets/blick
+  rotate: true
+  xy: 386, 22
+  size: 182, 141
+  orig: 182, 141
+  offset: 0, 0
+  index: -1
+assets/body
+  rotate: false
+  xy: 2, 2
+  size: 202, 202
+  orig: 202, 202
+  offset: 0, 0
+  index: -1
+assets/inside
+  rotate: false
+  xy: 206, 28
+  size: 178, 176
+  orig: 178, 176
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,20 @@
+
+unlock_stars.png
+size: 40,27
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+assets/bubble
+  rotate: false
+  xy: 27, 14
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+assets/star_little
+  rotate: false
+  xy: 2, 2
+  size: 23, 23
+  orig: 23, 23
+  offset: 0, 0
+  index: -1

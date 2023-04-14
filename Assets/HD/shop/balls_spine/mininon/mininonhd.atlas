@@ -1,0 +1,48 @@
+
+mininonhd.png
+size: 585,213
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+assets/body
+  rotate: true
+  xy: 208, 7
+  size: 204, 203
+  orig: 204, 203
+  offset: 0, 0
+  index: -1
+assets/cower_eye
+  rotate: false
+  xy: 413, 2
+  size: 75, 32
+  orig: 75, 32
+  offset: 0, 0
+  index: -1
+assets/effects
+  rotate: false
+  xy: 2, 6
+  size: 204, 205
+  orig: 204, 205
+  offset: 0, 0
+  index: -1
+assets/eyeball
+  rotate: true
+  xy: 413, 36
+  size: 76, 75
+  orig: 76, 75
+  offset: 0, 0
+  index: -1
+assets/eyeris
+  rotate: false
+  xy: 490, 86
+  size: 26, 26
+  orig: 26, 26
+  offset: 0, 0
+  index: -1
+assets/googles
+  rotate: false
+  xy: 413, 114
+  size: 170, 97
+  orig: 170, 97
+  offset: 0, 0
+  index: -1

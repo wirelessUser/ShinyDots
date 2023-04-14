@@ -1,0 +1,34 @@
+
+hearthd.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+assets/body
+  rotate: false
+  xy: 2, 22
+  size: 201, 201
+  orig: 201, 201
+  offset: 0, 0
+  index: -1
+assets/hart
+  rotate: true
+  xy: 387, 89
+  size: 134, 105
+  orig: 134, 105
+  offset: 0, 0
+  index: -1
+assets/heart_blick
+  rotate: false
+  xy: 2, 2
+  size: 18, 18
+  orig: 18, 18
+  offset: 0, 0
+  index: -1
+assets/shadow
+  rotate: true
+  xy: 205, 24
+  size: 199, 180
+  orig: 199, 180
+  offset: 0, 0
+  index: -1

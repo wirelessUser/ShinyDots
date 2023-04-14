@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>ball_fire_circle.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{47,47}</string>
+                <key>spriteSourceSize</key>
+                <string>{47,47}</string>
+                <key>textureRect</key>
+                <string>{{1,1},{47,47}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>3</integer>
+            <key>pixelFormat</key>
+            <string>RGBA8888</string>
+            <key>premultiplyAlpha</key>
+            <false/>
+            <key>realTextureFileName</key>
+            <string>yellowBall.png</string>
+            <key>size</key>
+            <string>{49,49}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:7d41ff6404c02e59322a0ee747229548:54ea1bce2ba898df1878b8c4d1de9fac:e9ee57449ff728ab3154006e4ce320c2$</string>
+            <key>textureFileName</key>
+            <string>yellowBall.png</string>
+        </dict>
+    </dict>
+</plist>

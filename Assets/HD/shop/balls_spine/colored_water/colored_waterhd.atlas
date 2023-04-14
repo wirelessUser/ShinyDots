@@ -1,0 +1,48 @@
+
+colored_waterhd.png
+size: 581,205
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/ball
+  rotate: false
+  xy: 2, 2
+  size: 203, 201
+  orig: 203, 201
+  offset: 0, 0
+  index: -1
+images/bubble
+  rotate: false
+  xy: 334, 15
+  size: 25, 24
+  orig: 25, 24
+  offset: 0, 0
+  index: -1
+images/shadow
+  rotate: true
+  xy: 388, 4
+  size: 199, 154
+  orig: 199, 154
+  offset: 0, 0
+  index: -1
+images/stedy_top_water
+  rotate: true
+  xy: 544, 73
+  size: 130, 35
+  orig: 130, 35
+  offset: 0, 0
+  index: -1
+images/top_water
+  rotate: false
+  xy: 207, 3
+  size: 125, 36
+  orig: 125, 36
+  offset: 0, 0
+  index: -1
+images/water
+  rotate: false
+  xy: 207, 41
+  size: 179, 162
+  orig: 179, 162
+  offset: 0, 0
+  index: -1

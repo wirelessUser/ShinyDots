@@ -1,0 +1,41 @@
+
+snowmanhd.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+assets/body
+  rotate: false
+  xy: 2, 53
+  size: 202, 201
+  orig: 202, 201
+  offset: 0, 0
+  index: -1
+assets/eye_L
+  rotate: true
+  xy: 40, 25
+  size: 26, 31
+  orig: 26, 31
+  offset: 0, 0
+  index: -1
+assets/eye_R
+  rotate: false
+  xy: 206, 223
+  size: 28, 31
+  orig: 28, 31
+  offset: 0, 0
+  index: -1
+assets/mouth
+  rotate: false
+  xy: 2, 2
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+assets/nose
+  rotate: false
+  xy: 2, 24
+  size: 36, 27
+  orig: 36, 27
+  offset: 0, 0
+  index: -1

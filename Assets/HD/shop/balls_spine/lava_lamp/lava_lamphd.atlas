@@ -1,0 +1,69 @@
+
+lava_lamphd.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+assets/blob_1
+  rotate: true
+  xy: 337, 22
+  size: 53, 57
+  orig: 53, 57
+  offset: 0, 0
+  index: -1
+assets/blob_2
+  rotate: false
+  xy: 277, 19
+  size: 58, 56
+  orig: 58, 56
+  offset: 0, 0
+  index: -1
+assets/blob_3
+  rotate: false
+  xy: 411, 162
+  size: 84, 82
+  orig: 84, 82
+  offset: 0, 0
+  index: -1
+assets/blob_4
+  rotate: false
+  xy: 206, 12
+  size: 69, 63
+  orig: 69, 63
+  offset: 0, 0
+  index: -1
+assets/blob_5
+  rotate: false
+  xy: 411, 88
+  size: 67, 72
+  orig: 67, 72
+  offset: 0, 0
+  index: -1
+assets/blob_6
+  rotate: false
+  xy: 126, 2
+  size: 26, 39
+  orig: 26, 39
+  offset: 0, 0
+  index: -1
+assets/body
+  rotate: false
+  xy: 2, 43
+  size: 202, 201
+  orig: 202, 201
+  offset: 0, 0
+  index: -1
+assets/bottom_blob
+  rotate: false
+  xy: 2, 2
+  size: 122, 39
+  orig: 122, 39
+  offset: 0, 0
+  index: -1
+assets/shadow
+  rotate: false
+  xy: 206, 77
+  size: 203, 167
+  orig: 203, 167
+  offset: 0, 0
+  index: -1

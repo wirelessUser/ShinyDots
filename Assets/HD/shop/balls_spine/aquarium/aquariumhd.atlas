@@ -1,0 +1,48 @@
+
+aquariumhd.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+assets/body
+  rotate: false
+  xy: 2, 36
+  size: 205, 204
+  orig: 205, 204
+  offset: 0, 0
+  index: -1
+assets/fish
+  rotate: false
+  xy: 209, 40
+  size: 67, 42
+  orig: 67, 42
+  offset: 0, 0
+  index: -1
+assets/hole
+  rotate: false
+  xy: 2, 2
+  size: 80, 32
+  orig: 80, 32
+  offset: 0, 0
+  index: -1
+assets/shadow_blick
+  rotate: false
+  xy: 209, 84
+  size: 205, 156
+  orig: 205, 156
+  offset: 0, 0
+  index: -1
+assets/water
+  rotate: false
+  xy: 416, 98
+  size: 174, 142
+  orig: 174, 142
+  offset: 0, 0
+  index: -1
+assets/water_top
+  rotate: false
+  xy: 592, 178
+  size: 146, 62
+  orig: 146, 62
+  offset: 0, 0
+  index: -1

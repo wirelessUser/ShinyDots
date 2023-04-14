@@ -1,0 +1,41 @@
+
+comethd.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+assets/body
+  rotate: false
+  xy: 2, 2
+  size: 201, 201
+  orig: 201, 201
+  offset: 0, 0
+  index: -1
+assets/body - Copy
+  rotate: false
+  xy: 205, 2
+  size: 201, 201
+  orig: 201, 201
+  offset: 0, 0
+  index: -1
+assets/cracks_1
+  rotate: false
+  xy: 611, 5
+  size: 201, 198
+  orig: 201, 198
+  offset: 0, 0
+  index: -1
+assets/cracks_2
+  rotate: false
+  xy: 408, 4
+  size: 201, 199
+  orig: 201, 199
+  offset: 0, 0
+  index: -1
+assets/shadow
+  rotate: false
+  xy: 814, 39
+  size: 199, 164
+  orig: 199, 164
+  offset: 0, 0
+  index: -1

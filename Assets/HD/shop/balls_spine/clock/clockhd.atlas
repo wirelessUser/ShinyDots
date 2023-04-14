@@ -1,0 +1,27 @@
+
+clockhd.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+assets/body
+  rotate: false
+  xy: 2, 16
+  size: 201, 200
+  orig: 201, 200
+  offset: 0, 0
+  index: -1
+assets/long_arrow
+  rotate: true
+  xy: 2, 2
+  size: 12, 57
+  orig: 12, 57
+  offset: 0, 0
+  index: -1
+assets/small_arrow
+  rotate: false
+  xy: 205, 203
+  size: 48, 13
+  orig: 48, 13
+  offset: 0, 0
+  index: -1

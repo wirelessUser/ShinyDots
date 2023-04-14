@@ -1,0 +1,27 @@
+
+ball_splash.png
+size: 214,112
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+assets/images/big_splash
+  rotate: false
+  xy: 2, 23
+  size: 115, 87
+  orig: 115, 87
+  offset: 0, 0
+  index: -1
+assets/images/mid_splash
+  rotate: false
+  xy: 119, 2
+  size: 93, 108
+  orig: 93, 108
+  offset: 0, 0
+  index: -1
+assets/images/mini_splas_2
+  rotate: false
+  xy: 2, 3
+  size: 61, 18
+  orig: 61, 18
+  offset: 0, 0
+  index: -1

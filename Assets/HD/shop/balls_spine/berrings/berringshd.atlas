@@ -1,0 +1,27 @@
+
+berringshd.png
+size: 446,208
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+assets/BG_body
+  rotate: true
+  xy: 207, 13
+  size: 193, 188
+  orig: 193, 188
+  offset: 0, 0
+  index: -1
+assets/ball
+  rotate: false
+  xy: 397, 160
+  size: 47, 46
+  orig: 47, 46
+  offset: 0, 0
+  index: -1
+assets/body
+  rotate: false
+  xy: 2, 2
+  size: 203, 204
+  orig: 203, 204
+  offset: 0, 0
+  index: -1

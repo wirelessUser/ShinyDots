@@ -1,0 +1,27 @@
+
+animal_elephanthd.png
+size: 527,206
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+assets/blick
+  rotate: true
+  xy: 384, 22
+  size: 182, 141
+  orig: 182, 141
+  offset: 0, 0
+  index: -1
+assets/body
+  rotate: false
+  xy: 2, 2
+  size: 202, 202
+  orig: 202, 202
+  offset: 0, 0
+  index: -1
+assets/inside
+  rotate: true
+  xy: 206, 13
+  size: 191, 176
+  orig: 191, 176
+  offset: 0, 0
+  index: -1

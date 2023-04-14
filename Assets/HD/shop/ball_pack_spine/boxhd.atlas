@@ -1,0 +1,146 @@
+
+boxhd.png
+size: 459,459
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+assets/blue_box_L
+  rotate: false
+  xy: 2, 255
+  size: 81, 202
+  orig: 81, 202
+  offset: 0, 0
+  index: -1
+assets/blue_box_R
+  rotate: false
+  xy: 2, 51
+  size: 81, 202
+  orig: 81, 202
+  offset: 0, 0
+  index: -1
+assets/blue_star_half
+  rotate: true
+  xy: 2, 10
+  size: 39, 77
+  orig: 39, 77
+  offset: 0, 0
+  index: -1
+assets/grean_box_L
+  rotate: false
+  xy: 85, 255
+  size: 81, 202
+  orig: 81, 202
+  offset: 0, 0
+  index: -1
+assets/grean_box_R
+  rotate: false
+  xy: 85, 51
+  size: 81, 202
+  orig: 81, 202
+  offset: 0, 0
+  index: -1
+assets/grean_star_half
+  rotate: false
+  xy: 417, 380
+  size: 39, 77
+  orig: 39, 77
+  offset: 0, 0
+  index: -1
+assets/orange_box_L
+  rotate: false
+  xy: 168, 255
+  size: 81, 202
+  orig: 81, 202
+  offset: 0, 0
+  index: -1
+assets/orange_box_R
+  rotate: false
+  xy: 168, 51
+  size: 81, 202
+  orig: 81, 202
+  offset: 0, 0
+  index: -1
+assets/orange_star_half
+  rotate: false
+  xy: 417, 301
+  size: 38, 77
+  orig: 38, 77
+  offset: 0, 0
+  index: -1
+assets/pink_box_L
+  rotate: false
+  xy: 251, 255
+  size: 81, 202
+  orig: 81, 202
+  offset: 0, 0
+  index: -1
+assets/pink_box_R
+  rotate: false
+  xy: 251, 51
+  size: 81, 202
+  orig: 81, 202
+  offset: 0, 0
+  index: -1
+assets/pink_star_half
+  rotate: true
+  xy: 160, 11
+  size: 38, 77
+  orig: 38, 77
+  offset: 0, 0
+  index: -1
+assets/purple_box_L
+  rotate: false
+  xy: 334, 256
+  size: 81, 201
+  orig: 81, 201
+  offset: 0, 0
+  index: -1
+assets/purple_box_R
+  rotate: false
+  xy: 334, 53
+  size: 81, 201
+  orig: 81, 201
+  offset: 0, 0
+  index: -1
+assets/purple_star_half
+  rotate: true
+  xy: 81, 10
+  size: 39, 77
+  orig: 39, 77
+  offset: 0, 0
+  index: -1
+assets/stars/blue_star_half
+  rotate: true
+  xy: 417, 82
+  size: 41, 40
+  orig: 41, 40
+  offset: 0, 0
+  index: -1
+assets/stars/grean_star_half
+  rotate: true
+  xy: 417, 257
+  size: 42, 40
+  orig: 42, 40
+  offset: 0, 0
+  index: -1
+assets/stars/orange_star_half
+  rotate: true
+  xy: 417, 213
+  size: 42, 40
+  orig: 42, 40
+  offset: 0, 0
+  index: -1
+assets/stars/pink_star_half
+  rotate: true
+  xy: 417, 169
+  size: 42, 40
+  orig: 42, 40
+  offset: 0, 0
+  index: -1
+assets/stars/purple_star_half
+  rotate: true
+  xy: 417, 125
+  size: 42, 40
+  orig: 42, 40
+  offset: 0, 0
+  index: -1

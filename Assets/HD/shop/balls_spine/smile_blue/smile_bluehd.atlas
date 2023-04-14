@@ -1,0 +1,62 @@
+
+smile_bluehd.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+assets/O
+  rotate: false
+  xy: 406, 143
+  size: 44, 55
+  orig: 44, 55
+  offset: 0, 0
+  index: -1
+assets/body
+  rotate: false
+  xy: 2, 47
+  size: 201, 201
+  orig: 201, 201
+  offset: 0, 0
+  index: -1
+assets/closed_eye
+  rotate: false
+  xy: 474, 230
+  size: 36, 18
+  orig: 36, 18
+  offset: 0, 0
+  index: -1
+assets/dot
+  rotate: false
+  xy: 205, 53
+  size: 29, 34
+  orig: 29, 34
+  offset: 0, 0
+  index: -1
+assets/dot2
+  rotate: false
+  xy: 78, 11
+  size: 28, 34
+  orig: 28, 34
+  offset: 0, 0
+  index: -1
+assets/shadow
+  rotate: false
+  xy: 205, 89
+  size: 199, 159
+  orig: 199, 159
+  offset: 0, 0
+  index: -1
+assets/smile
+  rotate: false
+  xy: 406, 200
+  size: 66, 48
+  orig: 66, 48
+  offset: 0, 0
+  index: -1
+assets/wide_smile
+  rotate: false
+  xy: 2, 2
+  size: 74, 43
+  orig: 74, 43
+  offset: 0, 0
+  index: -1

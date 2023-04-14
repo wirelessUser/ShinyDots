@@ -1,0 +1,55 @@
+
+smilehd.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+assets/O
+  rotate: false
+  xy: 204, 111
+  size: 43, 54
+  orig: 43, 54
+  offset: 0, 0
+  index: -1
+assets/blik
+  rotate: false
+  xy: 204, 69
+  size: 38, 40
+  orig: 38, 40
+  offset: 0, 0
+  index: -1
+assets/body
+  rotate: false
+  xy: 2, 41
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+assets/closed_eye
+  rotate: false
+  xy: 93, 21
+  size: 36, 18
+  orig: 36, 18
+  offset: 0, 0
+  index: -1
+assets/dot
+  rotate: false
+  xy: 204, 43
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+assets/smile
+  rotate: false
+  xy: 2, 2
+  size: 89, 37
+  orig: 89, 37
+  offset: 0, 0
+  index: -1
+assets/wide_smile
+  rotate: true
+  xy: 204, 167
+  size: 74, 43
+  orig: 74, 43
+  offset: 0, 0
+  index: -1
