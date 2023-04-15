@@ -7,28 +7,118 @@ using System.Linq;
 public class projectile : MonoBehaviour
 {
 
+	#region Old Code
+
+
+	//    public Vector2 startPos;
+	//	public Vector2 mousePos;
+
+	//	public int dots = 30;
+
+	//	private Vector2 startPosition;
+	//	private bool isClicking = false;
+
+	//	public GameObject Dots;
+	//	public List<GameObject> projectilesPath;
 
 
 
-	public Vector2 startPos;
-	public Vector2 mousePos;
+
+	//	void Start()
+	//	{
+	//		startPos = Vector2.zero;
+	//		Dots = GameObject.Find("dots");
+
+	//		startPosition = transform.position;
+	//		projectilesPath = Dots.transform.Cast<Transform>().ToList().ConvertAll(t => t.gameObject);
+	//		for (int i = 0; i < projectilesPath.Count; i++)
+	//		{
+	//			projectilesPath[i].GetComponent<Renderer>().enabled = false;
+	//		}
+	//	}
+
+	//	void Update()
+	//	{
+
+	//		mousePos = Input.mousePosition;
+
+	//		if (Input.GetAxis("Fire1") == 1)
+	//		{
+
+	//			if (!isClicking)
+	//			{
+	//				isClicking = true;
+	//                startPosition = Input.mousePosition;
+	//				Debug.Log("startPosition>>" + startPosition);
+	//                projectlePath(startPosition);
+
+	//			}
+	//			else
+	//			{
+	//				projectlePath(startPosition);
+	//			}
+	//		}
+
+
+	//	}// End  Update.........
+
+
+
+
+
+	//	void projectlePath(Vector2 startPosition)
+	//	{
+
+	//		Vector2 velocity =  (startPosition- mousePos) ;
+
+	//		for (int i = 0; i < projectilesPath.Count; i++)
+	//		{
+	//			projectilesPath[i].GetComponent<Renderer>().enabled = true;
+
+	//			float t = i/40;
+
+	//// Postion = startPosition(which is Mouse Position) + vecloty(which is diffrence of start&endPos*t (points indexers in loop) +  0.5f*g*sqaure of t(points indexers in loop) 
+
+	//	Vector2 point = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition) + ( velocity  *t) + ( 0.5f*Physics2D.gravity* t * t);
+
+	//			//Vector2 point = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition) + (velocity.normalized * t) + (0.5f * Physics2D.gravity * t * t);
+
+	//			projectilesPath[i].transform.position = point;
+	//		}
+
+	//	}
+
+
+	#endregion
+
+
+	public float power = 2.0f;
+	public float life = 1.0f;
+	public float dead_sense = 25f;
 
 	public int dots = 30;
 
 	private Vector2 startPosition;
-	private bool isClicking = false;
+	private bool shoot = false, aiming = false, hit_ground = false;
 
-	public GameObject Dots;
-	public List<GameObject> projectilesPath;
+	private GameObject Dots;
+	private List<GameObject> projectilesPath;
 
-	
-	
+	private Rigidbody2D myBody;
+	private Collider2D myCollider;
+
+	void Awake()
+	{
+		myBody = GetComponent<Rigidbody2D>();
+		myCollider = GetComponent<Collider2D>();
+	}
 
 	void Start()
 	{
-		startPos = Vector2.zero;
+
 		Dots = GameObject.Find("dots");
-	
+		myBody.isKinematic = true;
+		myCollider.enabled = false;
 		startPosition = transform.position;
 		projectilesPath = Dots.transform.Cast<Transform>().ToList().ConvertAll(t => t.gameObject);
 		for (int i = 0; i < projectilesPath.Count; i++)
@@ -39,58 +129,118 @@ public class projectile : MonoBehaviour
 
 	void Update()
 	{
-		
-		mousePos = Input.mousePosition;
-		
+		Aim();
+
+		if (hit_ground)
+		{
+			life -= Time.deltaTime;
+
+			Color c = GetComponent<Renderer>().material.GetColor("_Color");
+			GetComponent<Renderer>().material.SetColor("_Color", new Color(c.r, c.g, c.g, life));
+
+			if (life < 0)
+			{
+
+				if (GameManager.instance != null)
+				{
+					GameManager.instance.CreateBall();
+				}
+
+				Destroy(gameObject);
+			}
+
+		}
+
+	}
+
+	void Aim()
+	{
+		if (shoot)
+			return;
+
 		if (Input.GetAxis("Fire1") == 1)
 		{
-		
-			if (!isClicking)
+			if (!aiming)
 			{
-				isClicking = true;
-                startPosition = Input.mousePosition;
-				Debug.Log("startPosition>>" + startPosition);
-                projectlePath(startPosition);
-
+				aiming = true;
+				startPosition = Input.mousePosition;
+				CalculatePath();
+				
 			}
 			else
 			{
-				projectlePath(startPosition);
+				CalculatePath();
 			}
 		}
-		
+		else if (aiming && !shoot)
+		{
+			if (inDeadZone(Input.mousePosition) || inReleaseZone(Input.mousePosition))
+			{
+				aiming = false;
+				
+				return;
+			}
+			myBody.isKinematic = false;
+			myCollider.enabled = true;
+			shoot = true;
+			aiming = false;
+			myBody.AddForce(GetForce(Input.mousePosition));
+			
+			GameManager.instance.DecrementBalls();
+		}
 
-	}// End  Update.........
+	}
 
-   
-
-
-
-	void projectlePath(Vector2 startPosition)
+	Vector2 GetForce(Vector3 mouse)
 	{
-	
-		Vector2 velocity =  (startPosition- mousePos) ;
+		return (new Vector2(startPosition.x, startPosition.y) - new Vector2(mouse.x, mouse.y)) * power;
+	}
+
+	bool inDeadZone(Vector2 mouse)
+	{
+		if (Mathf.Abs(startPosition.x - mouse.x) <= dead_sense && Mathf.Abs(startPosition.y - mouse.y) <= dead_sense)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+	bool inReleaseZone(Vector2 mouse)
+	{
+		if (mouse.x <= 70)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+	void CalculatePath()
+	{
+		Vector2 vel = GetForce(Input.mousePosition) * Time.fixedDeltaTime / myBody.mass;
 
 		for (int i = 0; i < projectilesPath.Count; i++)
 		{
 			projectilesPath[i].GetComponent<Renderer>().enabled = true;
-
-			float t = i;
-
-// Postion = startPosition(which is Mouse Position) + vecloty(which is diffrence of start&endPos*t (points indexers in loop) +  0.5f*g*sqaure of t(points indexers in loop) 
-
-	Vector2 point = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition) + ( velocity.normalized  *t) + ( 0.5f*Physics2D.gravity* t * t);
-
-			
-
+			float t = i / 30f;
+			Vector3 point = PathPoint(transform.position, vel, t);
+			point.z = 1.0f;
 			projectilesPath[i].transform.position = point;
 		}
 
 	}
 
+	Vector2 PathPoint(Vector2 startP, Vector2 startVel, float t)
+	{
+		return startP + startVel * t + 0.5f * Physics2D.gravity * t * t;
+	}
+
 	
-   
-   
 } // ShootScript
 
 
@@ -156,7 +306,7 @@ public class projectile : MonoBehaviour
 
 
 
-	#region Old Code.........
+#region Old Code.........
 
 //public Vector2 startPos;
 //public Vector2 endPos;
