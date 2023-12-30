@@ -3,7 +3,7 @@ using System.Collections;
 
 public class MainMenuController : MonoBehaviour {
 
-	private Animator mainAnim, ballAnim;
+	[SerializeField]private Animator mainAnim, ballAnim;
 
 	void Awake() {
 		mainAnim = GameObject.Find ("Main Holder").GetComponent<Animator> ();
@@ -11,7 +11,7 @@ public class MainMenuController : MonoBehaviour {
 	}
 
 	public void PlayGame() {
-		Application.LoadLevel ("Gameplay");
+		UnityEngine.SceneManagement.SceneManager.LoadScene ("Gameplay");
 	}
 
 	public void SelectBall() {
