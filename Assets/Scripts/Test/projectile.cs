@@ -10,87 +10,78 @@ public class projectile : MonoBehaviour
 
 
 
-	public Vector2 startPos;
-	public Vector2 mousePos;
+    public int dots = 30;
+    private Vector2 startPosition;
+    private bool isClicking = false;
+    public GameObject Dots;
+    public List<GameObject> projectilesPath;
 
-	public int dots = 30;
+    void Start()
+    {
+        Dots = GameObject.Find("dots");
+        startPosition = Vector2.zero;
+        projectilesPath = Dots.transform.Cast<Transform>().ToList().ConvertAll(t => t.gameObject);
 
-	private Vector2 startPosition;
-	private bool isClicking = false;
+        for (int i = 0; i < projectilesPath.Count; i++)
+        {
+            projectilesPath[i].GetComponent<Renderer>().enabled = false;
+        }
+    }
 
-	public GameObject Dots;
-	public List<GameObject> projectilesPath;
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            isClicking = true;
+            startPosition = Input.mousePosition;
+            projectlePath(startPosition);
+        }
 
-	
-	
+        if (Input.GetMouseButton(0) && isClicking)
+        {
+            projectlePath(startPosition);
+        }
 
-	void Start()
-	{
-		startPos = Vector2.zero;
-		Dots = GameObject.Find("dots");
-	
-		startPosition = transform.position;
-		projectilesPath = Dots.transform.Cast<Transform>().ToList().ConvertAll(t => t.gameObject);
-		for (int i = 0; i < projectilesPath.Count; i++)
-		{
-			projectilesPath[i].GetComponent<Renderer>().enabled = false;
-		}
-	}
+        if (Input.GetMouseButtonUp(0))
+        {
+            isClicking = false;
+            HideProjectilePath();
+        }
+    }
 
-	void Update()
-	{
-		
-		mousePos = Input.mousePosition;
-		
-		if (Input.GetAxis("Fire1") == 1)
-		{
-		
-			if (!isClicking)
-			{
-				isClicking = true;
-                startPosition = Input.mousePosition;
-				Debug.Log("startPosition>>" + startPosition);
-                projectlePath(startPosition);
+    void projectlePath(Vector2 startPosition)
+    {
+        Vector2 velocity = (startPosition - (Vector2)Input.mousePosition);
 
-			}
-			else
-			{
-				projectlePath(startPosition);
-			}
-		}
-		
+        for (int i = 0; i < projectilesPath.Count; i++)
+        {
+            projectilesPath[i].GetComponent<SpriteRenderer>().enabled = true;
 
-	}// End  Update.........
+            float t = i / (float)dots;
 
-   
+            // Calculate the trajectory of projectile motion
+            float g = Physics2D.gravity.y;
+            Vector2 point = startPosition + velocity * t + 0.5f * new Vector2(1, g) * t * t;
 
+            // Convert the point to world space
+            point = Camera.main.ScreenToWorldPoint(point);
+
+            projectilesPath[i].transform.position = point;
+        }
+    }
 
 
-	void projectlePath(Vector2 startPosition)
-	{
-	
-		Vector2 velocity =  (startPosition- mousePos) ;
+    void HideProjectilePath()
+    {
+        for (int i = 0; i < projectilesPath.Count; i++)
+        {
+            projectilesPath[i].GetComponent<SpriteRenderer>().enabled = false;
+        }
+    }
 
-		for (int i = 0; i < projectilesPath.Count; i++)
-		{
-			projectilesPath[i].GetComponent<Renderer>().enabled = true;
 
-			float t = i;
 
-// Postion = startPosition(which is Mouse Position) + vecloty(which is diffrence of start&endPos*t (points indexers in loop) +  0.5f*g*sqaure of t(points indexers in loop) 
 
-	Vector2 point = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition) + ( velocity.normalized  *t) + ( 0.5f*Physics2D.gravity* t * t);
-
-			
-
-			projectilesPath[i].transform.position = point;
-		}
-
-	}
-
-	
-   
-   
 } // ShootScript
 
 
@@ -105,9 +96,7 @@ public class projectile : MonoBehaviour
 
 
 
-//here i am calcutain the projectile motin and it's working perfctely but i have some doubt >>>>> becuase in projectie motion i am using number of circles to make a proejctile path  by placing them one after another
-//>>>> to calcute vbelocty i have used the differnce initial positon of mouse and and last dragged position
-//But in the formula instead of time t the index numbers of the circles have been used , So i am confused why the index number used ?
+
 
 
 

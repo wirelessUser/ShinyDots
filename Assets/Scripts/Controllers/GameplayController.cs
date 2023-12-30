@@ -4,7 +4,7 @@ using System.Collections;
 public class GameplayController : MonoBehaviour {
 
 	public void BackToMainMenu() {
-		Application.LoadLevel ("MainMenu");
+		UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
 	}
 
 }
